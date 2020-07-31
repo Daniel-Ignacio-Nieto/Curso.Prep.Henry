@@ -1,0 +1,66 @@
+Concept JS I.txt
+
+-Variables: es la manera de almacenar un valor o dato a algo para luego utilizarlo 
+nuevamente, es como hacer la lista de compras en un papel, y eso guardarlo y asi
+cuando estas en el super te fijas en el papel todo lo que debes comprar para no tener
+que andar recordando tooodo. Como se genera una variable:
+ 
+ var compras = pan, verduras, carne, aceite, sal, etc
+
+se utiliza la palabra clave var luego el nombre de esa variable en este caso "compras"
+y con el "=" asignamos lo que se va a guardar en esa variable
+
+
+-Strings: los strings o cadenas son bloques de caracteres encerrados entre comillas,
+pueden ser simples, multiples como asi tambien numeros, pero SIEMPRE encerrados entre
+comillas.
+Ej: "nombre"  "apellido" "nombre y apellido" "edad menor a 30 años"
+
+
+-Funciones: Cuando se tienen conjuntos de variables y se decean estar modificando,
+cambiando o configurando, se deben recurrir a las funciones. Existen 3 formas de 
+crear una funcion:
+1- function mifuncion () {}
+2- var otrafuncion = function () {}
+3- var yOtra = () => {}
+
+Pero usaremos la 1 er forma por ahora.
+-Argumento: Se utiliza la palabra clave function ,luego el nombre de la funcion
+y entre parentesis va el "argumento" y entre corchetes el codigo a ejecutar.
+Cuando digo argumento me refiero a que puedes utilizar una variable que este
+dentro del codigo a ejecutar cosa que cuando llamemos a esta funcion (que SIEMPRE
+se debe ejecutar con el nombre de la misma y con parentesis ya sea que tenga o
+no un argumento) y se modifique el argumento, la funcion se ejecute con ese dato
+y devuelva lo que queremos. Ej:
+
+function saludo (nombre) {
+	console.log ("Hola" + nombre + ",como estas?")
+}
+saludo (Ignacio) // (Hola Ignacio, como estas?
+
+No solamente vamos a querer que nos devuelva datos de texto, a veces vamos a querer
+una devolucion de valor con respecto a alguna cuenta dentro de la funcion.
+En ese caso usaremos return (retornar), esto nos devuelve algo de la funcion,
+detiene inmediatamente lo que esta ejecutando y devuelve lo especificado, Ej:
+
+function dividir (a,b) {
+	var producto = a / b
+	return producto;
+}
+dividir (10,2) // 5  
+
+-Tambien puede ser que quieras que dentro de la funcion se ejecuten cosas si cumplen
+especificaciones o condiciones... en este caso usaremos la palabra clave if.
+Esto lo que hace basicamente es devolver true o false o ejecutar los codigos si 
+cumple con lo suministrado, en caso contrario sige con la funcion. Ej:
+function soymayorenEEUU (edad) {
+	if (edad > 21) {
+		return true
+	}
+	return false
+}
+soymayorenEEUU (21) // true
+
+-Valores Booleanos: esto proviene de la logica de Bool, es un concepto que alimenta
+el codigo binario y el nucleo de las computadoras. Esencialmente significa que 
+tiene dos opciones, activar o desactivar, 0 o 1, verdadero o falso.
