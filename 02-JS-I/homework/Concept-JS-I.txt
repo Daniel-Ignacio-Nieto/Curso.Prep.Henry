@@ -64,3 +64,6 @@ soymayorenEEUU (21) // true
 -Valores Booleanos: esto proviene de la logica de Bool, es un concepto que alimenta
 el codigo binario y el nucleo de las computadoras. Esencialmente significa que 
 tiene dos opciones, activar o desactivar, 0 o 1, verdadero o falso.
+ var valorbooleanoenJS = false
+
+ Los valores posibles de un dato booleano en JS son: true o false
