@@ -1,0 +1,26 @@
+Concept JS-II
+
+
+For: el for es un bucle, un bucle es aquello que se ejecuta una y otra vez hasta que devuelve lo que estamos buscando, o se detiene despues de cierto tiempo.
+La creacion del bucle se basa en: 
+
+for (variable; condicion; incremento de variable) { 
+//bloque de codigo
+}
+
+esas 3 cosas en el parentesis se separan con un punto y coma(;) 
+El bucle for elevara la expresion condicional. Si es "true", se ejecutara nuevamente, si es "false" dejara de funcionar.
+
+
+
+OPERADORES LOGICOS: tambien se puede convinar 2 expresiones de igualdad y preguntar si las dos son verdaderas, si alguna de ellas los o si ninguna lo son. Para ello se utilizan:
+
+&& (AND): ésta evalua dos expresiones y devolvera 'true' SI AMBAS SON VERDADERAS, en los demas casos devuelve 'false'
+
+|| (OR): éstas dos barras verticales, determinarán SI UNA O AMBAS EXPRESIONES SON VERDADERAS devuelve 'true', si las dos no lo son devuelve 'false'
+
+! (NOT): éste operador devolverá el valor booleano opuesto de lo que se pasa. Ej:
+      
+      if (!true) { devolvera false porque el contrario de true es false}
+
+      if (! (siete === siete)) {1ro se resuelve lo que esta en parentesis, de dentro hacia fuera, esto te devuelve true PERO si eso lo resolvemos con el NOT nos devolvera false ya que lo contrario de ese resultado es false}
