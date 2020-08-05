@@ -1,0 +1,9 @@
+Concept JS-III
+
+Arrays(arreglos o matrices): siempre entendimos que se puede agregar un solo dato de cualquier tipo a una variable, pero no es asi, hay veces que queremos apuntar una coleccion de tipos de datos en una variable y para esto recurrimos a los arrays. 
+Construir una matriz es simple, se declara la variable y al establecerla lo hacemos entre corchetes [] luego podemos agregar dentro separado por comas (,) cualquier cantidad de cadenas, numeros, booleanos como querramos y acceder a estos elementos cuando deseemos, ej:
+       var coleccion = [hola, true, "dos", 17]
+
+        console.log(coleccion)
+
+        // hola, true, "dos", 17
