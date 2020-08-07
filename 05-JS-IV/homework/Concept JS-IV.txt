@@ -1,0 +1,56 @@
+Concept JS-IV
+
+OBJETOS: 
+los objetos son contenedores de datos, muy similar a los arrays. Mientras que los arrays pueden contener multiples elementos relacionados unos con otros, los objetos contienen mucha informacion sobre una sola cosa. Se instancian usando llaves {} Por ej:
+
+const alumno = {'Ignacio Nieto', 21, si, true}
+
+PROPIEDADES: 
+cuando en un objeto debe almacenar distintos tipos de informacion, normalmente la idea es separarlas por temas o palabras claves llamadas "Propiedades" en estas se pueden almacenar valores de cualquier tipo, strings, numeros, booleanos, matriz, funcion o incluso otro objeto. Los objetos pueden tener varias propiedades pero deben estar separadas pura y exclusivamente por comas(,) y asignadas con dos puntos(:). Solo puede haber una propiedad de ese nombre, no se pueden repetir; pero los valores asignados a ellas si pueden ser repetidas e iguales. Estas propiedades se las denominan "Clave(key)" y a sus valores "value(valor)" Ej:
+
+const usuario = {
+	username: 'Juan Perez' ,
+	password: "loremiJS123" ,
+	lovesJS: true ,
+	favorite number: 17 ,
+}
+
+
+METODOS: 
+Las funciones guardadas en un objeto se las denominan "metodos". Podemos ejecutarlas llamando a este metodo usando notacion de puntos y parentesis finales. Ej:
+	objeto.nombrefuncion()
+
+
+NOTACION DE PUNTOS vs NOTACION DE CORCHETES:
+Hay dos formas de acceder a los valores dentro de los objetos. Con la notacion de puntos podemos llamar al nombre del objeto un punto y el nombre de la clave. Ej:
+	usuario.username // 'Juan Perez'
+
+La notacion de corchetes es como llamar a un elemento en una matriz, aunque con corchetes debemos usar una cadena o numero o una variable que apunte a una cadena o numero. Se puede llamar a cada clave envolviendola con comillas. Ej:
+	const passString = 'password'
+
+	usuario['lovesJS'] // true					*Normalmente la notacion de corchetes
+											se utiliza casi siempre con las variables
+	usuario['username'] // 'Juan Perez'
+	usuario[passString] // 'loremiJS123'
+
+BUCLES 'FOR...IN':
+Cuando queremos iterar con cada par key-value en nuestros objetos, los cuales difieren de las matrices que poseen un indice numerico para iterar con ellas por lo cual el bucle estandar no funcionara en los objetos. Se utiliza un segundo tipo de bucle llamado 'for...in loop'. Tiene una sintaxis parecida, empieza igual pero dentro del parentesis delararemos una variable, la palabra clave in y el nombre del objeto. Esto recorrera cada clave del objeto y finalizara cuando se hayan iterado todas las claves. Podemos usar esta clave y la notacion de corchetes en nuestro bucle for para aaceder al valor asociado en esa clave. Ej:
+
+const usuario = {
+	username: 'Juan Perez' ,
+	password: "loremiJS123" ,
+	lovesJS: true ,
+	favoritenumber: 17 ,
+}
+for(let clave in usuario) {
+	console.log(clave)
+	console.log(usuario[clave])
+}
+// username
+// 'Juan Perez'
+// password
+// 'loremiJS123'
+// lovesJS
+// true
+// favoritenumber
+// 17
