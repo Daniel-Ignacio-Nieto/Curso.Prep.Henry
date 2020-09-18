@@ -1,0 +1,43 @@
+Concept JS-V
+
+PROTOTYPE: cuando creamos miles de objetos de clases a partir de una clase con docenas de metodos iguales, la memoria se llenaria rapidamente, entonces con el fin de evitar eso se creo una forma unica de establecer un metodo una vez y dar acceso a cada objeto de esa clase a esos metodos. 
+Todos los objetos de JS tienen como referencia a otro objeto llamado prototype, por ejemplo: empleado y persona, todo empleado es una persona a su vez entonce se podria decir que el prototype de empleado es persona.
+Ahora como lo usamos, simple con su palabra clave .prototype, por ej: 
+
+function Usuario(nombre, github) {
+    this.nombre = nombre;
+    this.github = github;
+}
+
+Usuario.prototype.introduccion = function(){
+    return 'Mi nombre es ' + this.nombre + ', mi usuario de Github es ' + this.github + '.';
+}
+
+let juan = new Usuario('Juan', 'juan.perez');
+let antonio = new Usuario('Antonio', 'atralice');
+
+console.log(juan.introduccion()); // Mi nombre es Juan, mi usuario de Github es juan.perez.
+console.log(riley.introduccion()); // Mi nombre es Antonio, mi usuario de Github es atralice.
+
+aqui usamos un claro ejemplo de su uso en donde agregamos un metodo al prototype de usuario para que luego todos los objetos(nuevos usuarios juan, antonio) tengan acceso a la funcion de introduccion.
+
+
+
+
+CONSTRUCTORS O CLASES (plantillas): 
+Cuando creamos un objeto, estamos creando una plantilla y en lugar de copiarla una y otra vez, JS nos da acceso a lo que llamamos un "constructor" o "class". Las clases comparten gran parte de la misma funcionalidad. Las clasesson utiles para crear muchos objetos que comparten algunas de las mismas propiedades y metodos. Se crea mediante una funcion con la primer letra del nombre en mayuscula para referirse a una class o constructor, y para agregar objetos se instancian con la palabra new y el nombre del constructor. Ej:
+
+
+function Gato(nombre) {
+    // El nuevo operador crea un objeto, "this"
+    this.nombre = nombre;
+    this.maullar = function() {
+        return 'Mi nombre es ' + this.nombre + ' ... Meow!';
+    }
+    // Devuelve el objeto "this"
+}
+
+const sam = new Gato('Sam');
+const kitty = new Gato('Kitty');
+console.log(sam.maullar()); // 'Mi nombre es Sam ... Meow!'
+console.log(kitty.maullar()); // 'Mi nombre es Kitty ... Meow!'
