@@ -1,0 +1,3 @@
+Concept JS-VI
+
+Funciones Callback: JS tiene la capacidad de pasar una funcion como argumento de otra funcion, esto se llama "callback", que luego se invoca dentro de la función externa para completar algún tipo de rutina o acción. Nos permite llamarlas en cualquier momento y pasar argumentos dentro.
